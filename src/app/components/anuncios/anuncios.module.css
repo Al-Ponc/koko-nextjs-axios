@@ -1,0 +1,12 @@
+.aviso{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    background-color: rgb(165, 88, 93);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+  
+  }

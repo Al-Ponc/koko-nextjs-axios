@@ -1,0 +1,126 @@
+.detalleProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: sans-serif;
+}
+.contComprar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    background-color:rgb(64 81 41 / 77%);
+    color: rgb(255, 255, 255);
+}
+.txtComprar{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding-left: 2rem;
+    align-items: flex-start;
+    font-size: 1.3rem;
+}
+.txtComprar>p{
+    margin: 0;
+}
+.contComprar>img{
+    width: 70vh;
+    height: auto;
+}
+.subSecciones{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 55vh;
+    width: 90%;
+}
+.categoriaDescripcion{
+    width: 40vh;
+    text-align: justify;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(172, 187, 152, 0.77);
+}
+.contTarjDetalle{
+    display: flex;
+    flex-grow: 1;
+    padding-left: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(246, 246, 240);
+}
+.tarjDetalleProduct{
+    background-color: rgb(223, 156, 42);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vh;
+    height: 35vh;
+    box-sizing: border-box;
+    transition: 0.7s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.tarjDetalleProduct>img{
+    width: 100%;
+    height: 90%;
+}
+.tarjDetalleProduct>p{
+    font-size: 0.9rem;
+}
+.tarjDetalleProduct:hover{
+    transform: scale(1.2);
+}
+.seccChutneys{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.seccTemporada{
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media only screen and (max-width: 768px) {
+    .contComprar {
+      flex-direction: column;
+      align-items: center;
+    }
+    .txtComprar {
+      width: 90%;
+      font-size: 1rem;
+    }
+    .contComprar > img {
+      width: 80%;
+      height: auto;
+    }
+    .subSecciones {
+      flex-direction: column;
+      height: auto;
+    }
+    .categoriaDescripcion {
+      width: 95%;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    .tarjDetalleProduct {
+      width: 45%;
+      height: 43%;
+      margin-bottom: 1rem;
+    }
+    .seccChutneys {
+      flex-direction: column;
+    }
+    .seccTemporada{
+        flex-direction: column;
+    }
+}

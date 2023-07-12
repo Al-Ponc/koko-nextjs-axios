@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap"); 
+
+        
+        .h11 {
+            margin-top: 1rem;
+            text-align: center;
+            font-weight: lighter;
+        }
+        /* SECCION 1 COMIENZO*/
+        /* SECCION 1 COMIENZO*/
+        /* SECCION 1 COMIENZO*/
+        /* SECCION 1 COMIENZO*/
+        /* SECCION 1 COMIENZO*/
+        
+        .s1 {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            margin-inline: 7rem;
+            margin-top: 4rem;
+            background-color: #ccc;
+        }
+        
+        .foto1 img {
+            width: 500px;
+            height: 280px;
+            object-fit: cover;
+        }
+        
+        .parrafo1 {
+            text-align: justify;
+            font-size: 1.3rem;
+            padding-inline: 6rem;
+            padding-top: 2rem;
+            font-family: "Kalam", cursive;
+            
+        }
+        /* SECCION 2 COMIENZO */
+        /* SECCION 2 COMIENZO */
+        /* SECCION 2 COMIENZO */
+        /* SECCION 2 COMIENZO */
+        /* SECCION 2 COMIENZO */
+        
+        .s2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-inline: 7rem;
+            margin-top: 2rem;
+            background-color: #ccc;
+        }
+        
+        .foto2 img {
+            width: 500px;
+            height: 280px;
+            object-fit: cover;
+        }
+        
+        .parrafo2 {
+            text-align: justify;
+            font-size: 1.3rem;
+            padding-top: 2rem;
+            margin-inline: 6rem;
+            font-family: "Kalam", cursive;
+        }
+        /* SECCION 3 COMIENZO */
+        /* SECCION 3 COMIENZO */
+        /* SECCION 3 COMIENZO */
+        /* SECCION 3 COMIENZO */
+        /* SECCION 3 COMIENZO */
+        /* SECCION 3 COMIENZO */
+        
+        .s3 {
+            margin-inline: 7rem;
+            background-color: #ccc;
+            margin-top: 2rem;
+        
+        }
+        
+        .tablero {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .tablero img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .tablero .card p {
+            width: 100%;
+            word-wrap: break-word;
+        }
+        
+        .card {
+            padding: 1rem 1rem 2rem;
+            background: #f8f3e8;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+        }
+        
+        .card>h2 {
+            margin-top: 1rem;
+            font-family: "Kalam", cursive;
+            font-weight: normal;
+            font-size: 2rem;
+            color: #4a4a7d;
+            text-align: center;
+        }
+        
+        .card>p {
+            font-family: "Kalam", cursive;
+            font-size: 1rem;
+            color: #5e5e89;
+            text-align: center;
+        }
+
+        
+        @media (max-width: 1000px) {
+            /* SECCION 1 COMIENZO */
+            /* SECCION 1 COMIENZO */
+            /* SECCION 1 COMIENZO */
+            /* SECCION 1 COMIENZO */
+            /* SECCION 1 COMIENZO */
+            .s1 {
+                flex-direction: column;
+                padding-inline: 1rem;
+                margin-inline: 1rem;
+                margin-top: 1rem;
+            }
+            .parrafo1,
+            .parrafo2 {
+                text-align: justify;
+                font-size: 0.8rem;
+                padding-inline: 0;
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+                margin: 0;
+            }
+            .foto1 img,
+            .foto2 img {
+                height: auto;
+                width: 100%;
+            }
+            .foto1 h2,
+            .foto2 h2 {
+                font-size: 1.2rem;
+            }
+            .foto1 p,
+            .foto2 p {
+                font-size: 0.8rem;
+            }
+            /* SECCION 2 COMIENZO */
+            /* SECCION 2 COMIENZO */
+            /* SECCION 2 COMIENZO */
+            /* SECCION 2 COMIENZO */
+            /* SECCION 2 COMIENZO */
+            .s2 {
+                flex-direction: column-reverse;
+                padding-inline: 1rem;
+                margin-inline: 1rem;
+                margin-top: 1rem;
+            }
+            /* SECCION 3 COMIENZO */
+            /* SECCION 3 COMIENZO */
+            /* SECCION 3 COMIENZO */
+            /* SECCION 3 COMIENZO */
+            /* SECCION 3 COMIENZO */
+            .s3 {
+                margin-inline: 1rem;
+                margin-top: 1rem;
+            }
+            .tablero .card {
+                display: flex;
+                flex-wrap: wrap;
+                width: 30%;
+            }
+            .tablero .card img {
+                height: 50px;
+                width: 100%;
+                object-fit: cover;
+            }
+            .tablero .card h2 {
+                font-size: 0.8rem;
+                margin-top: 0;
+                width: 100%;
+                text-align: center;
+                word-wrap: break-word;
+            }
+            .tablero .card p {
+                font-size: 0.6rem;
+                text-align: center;
+                width: 100%;
+                word-wrap: break-word;
+            }
+        }
