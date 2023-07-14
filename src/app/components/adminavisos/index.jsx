@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import axios from 'axios';
+import styles from "./adminavisos.module.css"
 
 export default function AvisoEditar () {
   const [nuevoTitulo, setNuevoTitulo] = useState('');
@@ -17,19 +18,22 @@ export default function AvisoEditar () {
 
     } catch (error) {
       alert('No se pudo editar el aviso');
-      
+      console.error('No se pudo editar el aviso:', error);
     }
   };
 
-  return (
-    <div>
-      <input
-        type="text"
-        placeholder="Nuevo Anuncio"
-        value={nuevoTitulo}
-        onChange={(e) => setNuevoTitulo(e.target.value)}
-      />
-      <button onClick={handleEditarClick}>Editar aviso</button>
-    </div>
+  return (<>
+  <h2 className={styles.h22}>AVISOS</h2>
+    <div className={styles.contenedor}>
+    <textarea
+      className={styles.input1}
+      rows="5"
+      placeholder="Nuevo Aviso"
+      value={nuevoTitulo}
+      onChange={(e) => setNuevoTitulo(e.target.value)}
+    />
+    <button className={styles.btn} onClick={handleEditarClick}>Confirmar</button>
+  </div>
+  </>
   );
 };
