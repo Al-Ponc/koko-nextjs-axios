@@ -1,14 +1,14 @@
-'use client'
-import axios from 'axios';
+import AvisoEditar from "../components/adminavisos";
+import RecetasEditarBorrarCrear from "../components/adminrecetas";
 
 
-function Adm() {
-  return (
-    <div>
-      Actualizar Aviso
-      <button>Actualizar Aviso</button>
-    </div>
-  );
+const Amin = () => {
+    return (
+<>
+<AvisoEditar/>
+<RecetasEditarBorrarCrear/>
+    </>
+    );
 }
 
-export default Adm;
+export default Amin;

@@ -1,12 +1,354 @@
-.contenedorec{
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    margin-top: 4rem;
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap"); 
+
+.h11 {
+    text-align: center;
+    font-size: 65px;
+    color: rgb(175, 81, 21);
+    font-family: "kalam", cursive;
 }
 
-.imagenes{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+.imgReceta9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .imgReceta9>img {
+    width: 110%;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .hamburguesaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 4rem;
+    border: 4px solid hsl(23, 87%, 73%);
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+  }
+
+  .hamburguesaContainer>img {
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem 2rem;
+    background: #f8f3e8;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin-left: 69%;
+    margin-right: auto;
+    transform: rotate(2.6deg);
+    max-width: 42vh;
+  }
+
+  .recetaHambu {
+    order: 0;
+    font-size: 20px;
+    font-family: "kalam", cursive;
+    margin: 1% auto 4%;
+    max-width: 70%;
+  }
+
+  .listaHambu {
+    order: 0;
+    font-size: 20px;
+    font-family: "kalam";
+    margin-top: -20%;
+    margin-left: -50%;
+    
+  }
+
+  .hamburguesaT {
+    text-align: center;
+    font-family: "kalam", cursive;
+    font-size: 40px;
+    color: rgb(223, 156, 42);
+    text-decoration: underline;
+    line-height: 1.2;
+    margin-bottom: 4px;
+    margin-top: 54px;
+  }
+
+.imgReceta8{
+    display: flex;
+    flex-direction: row;
 }
+
+.imgReceta8>img{
+    height: 50vh;
+    width: 50vh;
+    order: 1;
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ensaladaContainer {
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 4rem;
+    border: 4px solid hsl(23, 87%, 73%);
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.ensaladaT {
+    text-align: center;
+    font-family: "kalam", cursive;
+    font-size: 40px;
+    color: rgb(223, 156, 42);
+    text-decoration: underline;
+    line-height: 1.2;
+    margin-bottom: 4px;
+    margin-top: 54px;
+
+   
+}
+
+.imgReceta7{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgReceta7>img{
+    height: 50vh;
+    width: 50vh;
+    order: 1;
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sandwitchContainer {
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 4rem;
+    border: 4px solid hsl(23, 87%, 73%);
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.sandwitchT{
+    font-family: "kalam", cursive;
+    color:rgb(223, 156, 42);
+}
+
+.imgReceta6{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgReceta6>img{
+    height: 50vh;
+    width: 50vh;
+    order: 1;
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ensaladaContainer1 {
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 4rem;
+    border: 4px solid hsl(23, 87%, 73%);
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.ensaladaT1{
+    font-family: "kalam", cursive;
+    color:rgb(223, 156, 42);
+}
+
+.imgReceta1{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgReceta1>img{
+    height: 50vh;
+    width: 50vh;
+    order: 1;
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hamburguesaContainer1 {
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 4rem;
+    border: 4px solid hsl(23, 87%, 73%);
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.hamburguesaT1{
+    font-family: "kalam", cursive;
+    color:rgb(223, 156, 42);
+}
+
+.imgReceta2{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgReceta2>img{
+    height: 50vh;
+    width: 50vh;
+    order: 1;
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nuggetsContainer {
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 4rem;
+    border: 4px solid hsl(23, 87%, 73%);
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.nuggetsT{
+    font-family: "kalam", cursive;
+    color:rgb(223, 156, 42);
+}
+
+.imgReceta3{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgReceta3>img{
+    height: 50vh;
+    width: 50vh;
+    order: 1;
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.canapeContainer {
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 4rem;
+    border: 4px solid hsl(23, 87%, 73%);
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.canapeT{
+    font-family: "kalam", cursive;
+    color:rgb(223, 156, 42);
+}
+
+.imgReceta4{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgReceta4>img{
+    height: 50vh;
+    width: 50vh;
+    order: 1;
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.galletaContainer {
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 4rem;
+    border: 4px solid hsl(23, 87%, 73%);
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.galletaT{
+    font-family: "kalam", cursive;
+    color:rgb(223, 156, 42);
+}
+
+.imgReceta5{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgReceta5>img{
+    height: 50vh;
+    width: 50vh;
+    order: 1;
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.chagarmaContainer {
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 4rem;
+    border: 4px solid hsl(23, 87%, 73%);
+    border-radius: 10%;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.chagarmaT{
+    font-family: "kalam", cursive;
+    color:rgb(223, 156, 42);
+}
+
+@media screen and (max-width: 768px) {
+    .hamburguesaContainer {
+      padding-inline: 2rem;
+    }
+  
+    .hamburguesaContainer>img {
+      max-width: 100%;
+    }
+  
+    .recetaHambu {
+      font-size: small;
+    }
+  }

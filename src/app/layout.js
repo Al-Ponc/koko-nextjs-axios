@@ -2,7 +2,8 @@ import Navegador from './components/navegador'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Pie from './components/pie';
-import Anuncios from './components/anuncios';
+import Anuncios from './components/anuncios'
+
 
 
 

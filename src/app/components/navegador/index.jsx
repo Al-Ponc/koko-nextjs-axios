@@ -23,9 +23,9 @@ export default function Navegador() {
       >
       <div className={styles.logocontenedor}>
         <Image
-          src="/koko.jpg"
+          src="/kokov.png"
           width="130"
-          height="65"
+          height="76"
           alt="koko"
           className={styles.koko}
         />

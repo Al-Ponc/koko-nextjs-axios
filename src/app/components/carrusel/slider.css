@@ -121,7 +121,7 @@
     color: black;
   }
 
-  @media (max-width: 700px){
+  @media (max-width: 500px){
 
     .slider-container {
         height: 30vh;

@@ -1,39 +1,33 @@
-"use client"
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+'use client'
 
-const Contacto = () => {
-  const [data, setData] = useState([]);
+import { useEffect, useState } from 'react';
+import { getRequest } from "../service/api";
+
+function Contacto() {
+  const [recetas, setRecetas] = useState([]);
 
   useEffect(() => {
-    fetchData();
+    getRequest('/lista_recetas')
+      .then(response => {
+        setRecetas(response.data);
+      })
+      .catch(error => {
+        console.error('Error', error);
+      });
   }, []);
 
-  const fetchData = async () => {
-    try {
-      const response = await axios.get('http://localhost:1337/api/recetas/?populate=deep,10');
-      const responseData = response.data.data;
-      setData(responseData);
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  };
-
   return (
-    <>
-      <div></div>
-      <ul>
-        {data.map((item) => (
-          <li key={item.id}>
-            <h3>{item.attributes.Titulo}</h3>
-            <p>{item.attributes.Descripcion}</p>
-
-    </li>
-        
-        ))}
-      </ul>
-    </>
+    <div>
+      {recetas.map(receta => (
+        <div className={styles.contenedorec} key={receta.recetaId}>
+          <img className={styles.imagenes} src={receta.imgReceta} alt={receta.nombreReceta} />
+          <h2>{receta.nombreReceta}</h2>
+          <p>{receta.desarrolloReceta}</p>
+          
+        </div>
+      ))}
+    </div>
   );
-};
+}
 
 export default Contacto;
